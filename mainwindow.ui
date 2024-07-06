@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>666</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <layout class="QGridLayout" name="gridLayout" rowstretch="0,0,0" columnstretch="0,200,0,0,200,0,0,200,0,100,0,100">
+        <item row="2" column="8">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>mm</string>
+          </property>
+          <property name="buddy">
+           <cstring>S1_value</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="FieldAngle">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Number of surfaces&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+          <property name="maxLength">
+           <number>32759</number>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="4">
+         <widget class="QLineEdit" name="EPDiameter">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Number of surfaces&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+          <property name="maxLength">
+           <number>32759</number>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QLabel" name="label_NP_8">
+          <property name="text">
+           <string>AD</string>
+          </property>
+          <property name="buddy">
+           <cstring>EPDiameter</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_NP_2">
+          <property name="text">
+           <string>2w</string>
+          </property>
+          <property name="buddy">
+           <cstring>FieldAngle</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_NP">
+          <property name="text">
+           <string>NP</string>
+          </property>
+          <property name="buddy">
+           <cstring>lineEdit_NP</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="6">
+         <widget class="QLabel" name="label_NP_7">
+          <property name="text">
+           <string>s1</string>
+          </property>
+          <property name="buddy">
+           <cstring>S1_value</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="5">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>mm</string>
+          </property>
+          <property name="buddy">
+           <cstring>EPDiameter</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="5">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>mm</string>
+          </property>
+          <property name="buddy">
+           <cstring>FieldHeight</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="9">
+         <widget class="QPushButton" name="setInfinity">
+          <property name="text">
+           <string>Set Infinity</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="7">
+         <widget class="QLineEdit" name="S1_value">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Number of surfaces&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>-∞</string>
+          </property>
+          <property name="maxLength">
+           <number>32759</number>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="11" rowspan="2">
+         <widget class="QListWidget" name="listWidget_WLines">
+          <item>
+           <property name="text">
+            <string>e - 0,5461</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="lineEdit_NP">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Number of surfaces&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+          <property name="maxLength">
+           <number>32759</number>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="10">
+         <widget class="QPushButton" name="deleteWL">
+          <property name="text">
+           <string>Del WL</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>deg</string>
+          </property>
+          <property name="buddy">
+           <cstring>FieldAngle</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_NP_3">
+          <property name="text">
+           <string>2y</string>
+          </property>
+          <property name="buddy">
+           <cstring>FieldHeight</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="FieldHeight">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Number of surfaces&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+          <property name="maxLength">
+           <number>32759</number>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="4">
+         <widget class="QLineEdit" name="ObjNA">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Number of surfaces&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+          <property name="maxLength">
+           <number>32759</number>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QLabel" name="label_NP_9">
+          <property name="text">
+           <string>NA</string>
+          </property>
+          <property name="buddy">
+           <cstring>ObjNA</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="6">
+         <widget class="QLabel" name="label_ND">
+          <property name="text">
+           <string>ND</string>
+          </property>
+          <property name="buddy">
+           <cstring>comboBox_ND</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="7">
+         <widget class="QComboBox" name="comboBox_ND">
+          <item>
+           <property name="text">
+            <string>1</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="9">
+         <widget class="QPushButton" name="addWL">
+          <property name="text">
+           <string>Add WL</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="10">
+         <widget class="QComboBox" name="comboBox_WLines">
+          <item>
+           <property name="text">
+            <string>t - 1,014</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>s - 0,8521</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>r - 0,7065</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>C - 0,6563</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>C' - 0,6438</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>- 0,6328</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>D - 0,5893</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>d - 0,5876</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>e - 0,5461</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>F - 0,4861</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>F' - 0,48</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>g - 0,4358</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>h - 0,4047</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="tableWidget">
+      <row>
+       <property name="text">
+        <string>OBJ</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>APER</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>IMG</string>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string>Radius</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Thickness</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Glass</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Max Ray Height</string>
+       </property>
+      </column>
+      <item row="0" column="0">
+       <property name="text">
+        <string>infinity</string>
+       </property>
+      </item>
+      <item row="0" column="1">
+       <property name="text">
+        <string>0,0</string>
+       </property>
+       <property name="flags">
+        <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+       </property>
+      </item>
+      <item row="0" column="2">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="1" column="0">
+       <property name="text">
+        <string>infinity</string>
+       </property>
+      </item>
+      <item row="1" column="1">
+       <property name="text">
+        <string>0,0</string>
+       </property>
+      </item>
+      <item row="2" column="0">
+       <property name="text">
+        <string>infinity</string>
+       </property>
+      </item>
+      <item row="2" column="1">
+       <property name="text">
+        <string>0,0</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="label_FL">
+        <property name="text">
+         <string>FL</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="FLVal">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_Len">
+        <property name="text">
+         <string>Lenght</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="TotalLenghtVal">
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_Magn">
+        <property name="text">
+         <string>Betta</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="LinMagnification">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>666</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="FileMenu">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew"/>
+   </widget>
+   <widget class="QMenu" name="menuGlasses">
+    <property name="title">
+     <string>Glasses</string>
+    </property>
+    <addaction name="actionAdd_New_Glass"/>
+   </widget>
+   <widget class="QMenu" name="menuAnalysis">
+    <property name="title">
+     <string>Analysis</string>
+    </property>
+    <addaction name="actionSpot_Diagram"/>
+    <addaction name="actionRay_Trace"/>
+   </widget>
+   <addaction name="FileMenu"/>
+   <addaction name="menuAnalysis"/>
+   <addaction name="menuGlasses"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNew"/>
+   <addaction name="actionAdd_New_Glass"/>
+   <addaction name="actionRay_Trace"/>
+  </widget>
+  <action name="actionNew">
+   <property name="text">
+    <string>New</string>
+   </property>
+   <property name="toolTip">
+    <string>Reset Optical System</string>
+   </property>
+  </action>
+  <action name="actionAdd_New_Glass">
+   <property name="text">
+    <string>Add New Glass</string>
+   </property>
+  </action>
+  <action name="actionSpot_Diagram">
+   <property name="text">
+    <string>Spot Diagram</string>
+   </property>
+  </action>
+  <action name="actionRay_Trace">
+   <property name="text">
+    <string>Ray Trace</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>EPDiameter</tabstop>
+  <tabstop>S1_value</tabstop>
+  <tabstop>setInfinity</tabstop>
+  <tabstop>LinMagnification</tabstop>
+  <tabstop>FLVal</tabstop>
+  <tabstop>tableWidget</tabstop>
+  <tabstop>TotalLenghtVal</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
